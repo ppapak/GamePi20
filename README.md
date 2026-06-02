@@ -1,6 +1,5 @@
 # GamePi20 Retropie single install script 
 
-## 1. Tactical Execution Summary
 This is a provisioning script for the GamePi20 provisioning script on a Raspberry Pi Zero and Zero 2 executing Raspberry Pi OS (Debian Trixie Lite) paired with a RetroPie deployment. The script executes kernel-level configurations, compiles device tree structures, maps physical General Purpose Input/Output (GPIO) pins to specific input events, modifies boot parameters, and triggers downstream application compilation.
 
 ### Installation
@@ -16,7 +15,7 @@ sudo ./install_pizero.sh
 
 ---
 
-## 2. Parameter Constraints and Environment Setup
+## Parameter Constraints and Environment Setup
 The execution requires root privileges. It checks parameters to enforce specific architectural rules:
 * Supported arguments: -zero, -zero2, -32, and -64.
 * Mandatory definition: Both hardware target and architecture target must be specified via flags.
@@ -25,7 +24,7 @@ The execution requires root privileges. It checks parameters to enforce specific
 
 ---
 
-## 3. Structural Decomposition of Execution Phases
+## Structural Decomposition of Execution Phases
 
 ### Phase 1: Package Synchronization and Core Dependencies
 
